@@ -1,0 +1,31 @@
+.main{
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+mark{
+    background: linear-gradient(135deg, rgba(172, 59, 59, 0.75) 0%, rgba(44, 68, 188, 0.75) 80%);
+    transition: 0.3s;
+    color: white;
+}
+mark:hover {
+    background-color:  rgba(13, 31, 123, 0.75);
+}
+
+.font{
+    font-family: 'Baloo Chettan', cursive;
+}
+.col-7{
+    padding-left: 0;
+}
+.vibe{
+    background: linear-gradient(135deg, rgba(238.79,39, 0.75) 0%, rgba(144,55,242,0.75) 80%);
+    transition: 0.3;
+    color: white;
+}
+.vibe:hover{
+    background-color: rgba(51, 13, 95, 0.75);
+}

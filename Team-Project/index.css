@@ -1,0 +1,212 @@
+/* janejungsdf */
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+body {
+    font-family: 'yg-jalnan';
+}
+
+#logo {
+width: 100px
+} 
+
+.menu li{
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.menu li a {
+    color: #F52758;
+    text-decoration: none;
+  }
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #F8D8E5;
+    z-index: 10;
+  }
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+}
+
+/* leeshinhyeong */
+#VIDEO{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gal{
+    font-size: 30px;
+    text-align:center;
+    color: #F52758;
+    
+}
+
+.vid{
+    font-size: 30px;
+    text-align: center;
+    color: #F52758;
+}
+
+#GALLERY {
+  width: 1200px;
+  margin  : 0 auto;
+  margin-top: 50px;
+}
+
+#GALLERY .carousel-inner, #GALLERY .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+#GALLERY .carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#footer{
+  background-color:#F8D8E5;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+/* HyeonDo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#PROFILE {
+  width: 100%;
+  min-width: 1200px;
+  margin: 1rem 0;
+  margin-top: 50px;
+}
+
+.pro{
+  font-size: 30px;
+  text-align: center;
+  color: #F52758;
+}
+
+.profile-body {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+.profile-wrapper {
+  width: 20%;
+  min-width: 200px;
+}
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(70,70,70,0.3);
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.member-name {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+#DISCOGRAPHY {
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dis {
+  font-size: 30px;
+  text-align: center;
+  color: #F52758;
+}
+
+#DISCOGRAPHY .carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#DISCOGRAPHY .carousel-inner, #DISCOGRAPHY .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.album-img {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-img img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 10px 0px rgba(70,70,70,0.3);
+}
+
+.song-list {
+  width: 600px;
+  height: 100%;
+}
+
+.song-list-head {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.song-list-body {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.song-list-item {
+  height: 60px;
+  width: 50%;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  text-indent: 5px;
+}
+
+#footer a {
+  color: initial;
+  text-decoration: none;
+}

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "locus_sangsang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+body {
+  font-family: "locus-sangsang";
+  margin: 0;
+  background-color: black;
+}
+
+#minions_video {
+  min-width: 1200px;
+}
+
+#minions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.minion {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 70px;
+}
+
+.menu_select {
+  display: flex;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.container p {
+  color: white;
+}
+
+#footer {
+  background-color: #fcdc6d;
+  height: 150px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#footer p a {
+  color: black;
+  text-decoration: none;
+}

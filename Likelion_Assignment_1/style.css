@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  color: white;
+}
+
+.header {
+  background: #333;
+  padding: 50px 0;
+  color: white;
+}
+
+.header h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.header p {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.main h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body button {
+  margin-top: auto;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+.card + .card {
+  margin-left: 20px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-body {
+  font-size: 1rem;
+  word-break: keep-all;
+}

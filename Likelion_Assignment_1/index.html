@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>LikeLion</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <h3>서울시립대 멋쟁이사자처럼 7기 주현도</h3>
+        <div>
+          <p>안녕하세요, 서울시립대 수학과 19학번 주현도입니다.</p>
+          <p>이번에 새로 들어온 만큼 멋쟁이사자처럼 활동 열심히 해서</p>
+          <p>
+            제가 만들고 싶어하는 것을 꼭 만들겠다는 목표를 이루고자 합니다.
+          </p>
+          <p>
+            그리고 여러 사람을 만나고, 협업하며 많은 경험을 쌓아보고자 합니다.
+          </p>
+          <p>이를 통해 미래의 제 진로로 향하는 발판을 마련하고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main">
+      <h3>만들고 싶은 서비스</h3>
+      <div class="card-wrapper">
+        <div class="card col">
+          <div class="card-body">
+            <h5 class="card-title">시립대 학식 알리미</h5>
+            <p class="card-text">
+              대중적으로 사용되고 있는 카카오톡의 API를 사용한 챗봇 형식의
+              알리미
+            </p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal1"
+            >
+              Card link
+            </button>
+          </div>
+        </div>
+        <div class="card col">
+          <div class="card-body">
+            <h5 class="card-title">알고리즘 학습 홈페이지</h5>
+            <p class="card-text">
+              KOISTUDY, BAEKJOON Online Judge 등과 같이 웹 상에서 알고리즘
+              문제를 풀면 서버에서 채점을 해주는 웹 어플리케이션
+            </p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal2"
+            >
+              Card link
+            </button>
+          </div>
+        </div>
+        <div class="card col">
+          <div class="card-body">
+            <h5 class="card-title">Web IDE</h5>
+            <p class="card-text">
+              웹 사이트 상에서 프로그래밍을 할 수 있는 웹 어플리케이션
+            </p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal3"
+            >
+              Card link
+            </button>
+          </div>
+        </div>
+        <div class="card col">
+          <div class="card-body">
+            <h5 class="card-title">Chrome Youtube Extension</h5>
+            <p class="card-text">
+              유튜브를 백그라운드 상에서 실행시킴으로써 따로 브라우저 창을
+              만들지 않고서도 동영상을 재생시킬 수 있는 확장 프로그램
+            </p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#modal4"
+            >
+              Card link
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              시립대 학식 알리미
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            기존의 카카오톡을 사용한 알리미들은 대부분 미리 만들어져 있는 메뉴를
+            선택하여 정보를 얻는 방식입니다. 하지만 제가 원하는 방식은 사용자가
+            문구를 입력하면 서버에서 그 문구를 분석하여 원하는 정보를 출력하는
+            방식입니다. 예를 들어 만약 사용자가 "내일 점심 학생회관 학식
+            뭐야?"라고 입력을 하면 문장 및 핵심 키워드 분석을 통해 다음날 점심에
+            학생회관에서 제공하는 학식 리스트를 출력합니다. 그런 식으로 저는
+            챗봇이라는 이름에 걸맞은 서비스를 개발하고 싶습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              알고리즘 학습 홈페이지
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            널리 알려진 KOISTUDY, BAEKJOON Online Judge와 같은 웹 서비스와 같이
+            알고리즘 문제를 풀어서 제출하면 서버에서 채점한 후 사용자에게
+            알려주는 서비스입니다. 여기서 저는 학교 수업용으로도 사용할 수
+            있도록 수업 자료 게시판, 과제 제출 등의 부가 기능이 포함된 학교별
+            플랫폼을 제공할 수 있는 기능까지 포함된 웹 애플리케이션을 개발하고
+            싶습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Web IDE</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            컴파일러가 들어있는 프로그램을 따로 설치할 필요 없이 웹상에서
+            프로그래밍하고 컴파일하는 서비스입니다. 또한, Github와의 연동을 통해
+            언제든지 Repository를 불러와 파일을 수정하고 올릴 수 있는 기능을
+            생각하고 있고, 별도로 사용자가 원하는 폴더 및 파일을 만들어 코딩하고
+            저장할 수 있는 클라우드를 제공할 수 있는 기능을 담은 웹
+            애플리케이션을 개발하고 싶습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Chrome Youtube Extension
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            유튜브로 동영상이 아닌 음악을 들을 때에도 사용자는 따로 브라우저
+            창을 킨 후, 유튜브 사이트에 들어가 음악을 검색하고 재생시켜야
+            합니다. 따라서 저는 이러한 불편함을 최소화하기 위해 크롬 확장
+            프로그램으로써 백그라운드에서 유튜브를 재생시킬 수 있는 서비스를
+            개발하고 싶습니다.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
