@@ -1,8 +1,10 @@
 <h1>Hello World</h1>
+<a href="{% url 'create' %}">글쓰기</a>
 
 {% for post in post_list %}
 
-<div>{{ post.title }}</div>
-<div>{{ post.content }}</div>
+<a href="{% url 'detail' post.id %}">
+  <div>{{ post.title }}</div>
+</a>
 
 {% endfor %}
