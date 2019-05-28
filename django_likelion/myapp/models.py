@@ -9,3 +9,8 @@ class Post(models.Model):
 
   def __str__(self):
     return self.title
+
+class Comment(models.Model):
+  post = models.ForeignKey(Post, on_delete=models.CASCADE)
+  content = models.TextField()
+  pub_date = models.DateTimeField(default=timezone.now)
