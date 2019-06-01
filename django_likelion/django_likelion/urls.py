@@ -18,10 +18,12 @@ from django.urls import path
 import myapp.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', myapp.views.main, name="main"),
-    path('<int:post_id>', myapp.views.detail, name="detail"),
-    path('create/', myapp.views.create, name="create"),
-    path('<int:post_id>/delete', myapp.views.delete, name="delete"),
-    path('<int:post_id>/update', myapp.views.update, name="update"),
+  path('admin/', admin.site.urls),
+  path('', myapp.views.main, name="main"),
+  path('<int:post_id>', myapp.views.detail, name="detail"),
+  path('create/', myapp.views.create, name="create"),
+  path('<int:post_id>/delete', myapp.views.delete, name="delete"),
+  path('<int:post_id>/update', myapp.views.update, name="update"),
+  path('<int:post_id>/comment_create', myapp.views.comment_create, name="comment_create"),
+  path('<int:comment_id>/comment_delete', myapp.views.comment_delete, name="comment_delete")
 ]

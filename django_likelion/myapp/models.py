@@ -12,5 +12,11 @@ class Post(models.Model):
 
 class Comment(models.Model):
   post = models.ForeignKey(Post, on_delete=models.CASCADE)
-  content = models.TextField()
+  content = models.CharField(max_length=100)
   pub_date = models.DateTimeField(default=timezone.now)
+
+  def __str__(self):
+    return self.post.title + " / " + self.content
+
+  class Meta:
+    ordering = ['-id']

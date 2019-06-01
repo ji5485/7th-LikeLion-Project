@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>내가 살아온 인생 계산하기</h3>
+    <p>생년월일입력 : <input type="date" id="birth" /></p>
+    <button onclick="getLife()">나이 계산 출력</button>
+    <p id="result"></p>
+
+    <script>
+      function getLife() {
+        var el = document.getElementById("birth");
+        var result = document.getElementById("result");
+        var select = new Date(el.value);
+        var today = new Date();
+
+        var diff = Math.ceil(
+          Math.abs(select.getTime() - today.getTime()) / (1000 * 3600 * 24)
+        );
+        var age = Math.floor(diff / 365) + 1;
+
+        result.innerHTML =
+          "당신은 태어나서부터 " +
+          diff +
+          "일 경과해서 지금은 " +
+          age +
+          "살입니다.";
+      }
+    </script>
+  </body>
+</html>
