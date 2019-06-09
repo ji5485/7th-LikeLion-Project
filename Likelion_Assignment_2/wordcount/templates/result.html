@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #container {
+      width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    h2 {
+      font-weight: lighter;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+      color: blue;
+      position: absolute;
+      right: 0;
+      top: 3px;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <h2>
+        당신이 입력한 텍스트는 총 {{ wordCount }}단어로 구성되어 있습니다.
+      </h2>
+      <a href="{% url 'main' %}">다시하기</a>
+      <hr />
+      <h3>입력한 텍스트 :</h3>
+      <p style="margin-bottom: 2rem">{{ words }}</p>
+      <hr />
+      <h3>단어 카운트 :</h3>
+      {% for word, count in wordDict.items %}
+      <p>{{ word }} : {{ count }}</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>

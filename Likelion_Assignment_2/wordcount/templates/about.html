@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #container {
+      width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    h2 {
+      font-weight: lighter;
+      font-size: 2rem;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+      color: blue;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  </style>
+
+  <body>
+    <div id="container">
+      <h2>About</h2>
+      <p>멋쟁이 사자처럼 워드카운트 페이지.</p>
+      <p>
+        메인 페이지에서 문장을 입력하면 어떤 단어가 몇 개 들어갔는지 결과가
+        나옵니다!
+      </p>
+      <a href="{% url 'main' %}">Main</a>
+    </div>
+  </body>
+</html>
