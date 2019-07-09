@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <h3>회원가입 페이지</h3>
+
+      <div>아이디</div>
+      <input type="text" name="username" />
+
+      <div>비밀번호</div>
+      <input type="password" name="password1" />
+
+      <div>비밀번호 확인</div>
+      <input type="password" name="password2" />
+
+      <input type="submit" value="회원가입" />
+    </form>
+  </body>
+</html>
