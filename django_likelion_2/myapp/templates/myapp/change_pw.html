@@ -10,24 +10,18 @@
   <body>
     <form action="" method="POST">
       {% csrf_token %}
-      <h3>회원가입 페이지</h3>
+      <h3>비밀번호 변경</h3>
 
-      <div>아이디</div>
-      <input type="text" name="username" />
+      <div>원래 비밀번호</div>
+      <input type="password" name="origin_password" />
 
-      <div>비밀번호</div>
+      <div>새로운 비밀번호</div>
       <input type="password" name="password1" />
 
-      <div>비밀번호 확인</div>
+      <div>새로운 비밀번호 확인</div>
       <input type="password" name="password2" />
 
-      <div>이메일</div>
-      <input type="email" name="email" />
-
-      <div>휴대폰 번호</div>
-      <input type="text" name="phone_number" />
-
-      <input type="submit" value="회원가입" />
+      <input type="submit" value="비밀번호 변경하기" />
     </form>
   </body>
 </html>

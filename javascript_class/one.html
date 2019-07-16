@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header id="header-id" class="header-class">
+      <h1>Logo</h1>
+    </header>
+
+    <script type="text/javascript">
+      const body = document.body;
+      body.style.padding = "0 100px";
+
+      const headerId = document.getElementById('header-id');
+      headerId.style.display = "flex";
+      headerId.style.justifyContent = "space-between";
+      headerId.style.padding = "0 20px";
+
+      let ul = document.createElement("ul");
+      ul.style.display = "flex";
+      ul.style.justifyContent = "space-between";
+      ul.style.alignItems = "center";
+      ul.style.paddingLeft = 0;
+      ul.style.width = "50%";
+
+      const arr = ['Home', 'Article One', 'Article Two', 'Comment'];
+      for (let item of arr) {
+        let li = document.createElement("li");
+        li.style.listStyle = "none";
+        li.innerText = item;
+        li.addEventListener("mouseover", function(e) {
+          e.target.style.backgroundColor = "yellow";
+        })
+        li.addEventListener("mouseleave", function(e) {
+          e.target.style.backgroundColor = "unset";
+        })
+        ul.append(li);
+      }
+
+      headerId.append(ul);
+    </script>
+  </body>
+</html>
