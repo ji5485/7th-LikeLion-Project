@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>JS UOS LION</title>
+    <style>
+      #article {
+        margin-top: 30px;
+        padding: 15px;
+      }
+
+      div#article-1 h2 {
+        text-align: center;
+      }
+
+      .post:not(:first-child):not(:last-child) {
+        margin: 75px 0;
+      }
+
+      .post:first-child {
+        margin-bottom: 75px;
+      }
+
+      .post:last-child {
+        margin-top: 75px;
+      }
+
+      .post-content {
+        position: relative;
+      }
+
+      .white-box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Maru</h1>
+    </header>
+
+    <article id="article">
+      <div id="article-1">
+        <h2>Post</h2>
+
+        <div id="post-layout">
+          <div class="post">
+            <h4 class="post-title">
+              Post One
+            </h4>
+            <div class="post-content">
+              <div class="white-box" data-current-width="100"></div>
+              <p class="post-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                iste! Tempore asperiores illum accusantium pariatur sint vitae
+                aliquam repudiandae temporibus distinctio quas perspiciatis
+                libero tenetur dolorum est, ex odio omnis eos ipsam.
+                Necessitatibus cupiditate, magnam at ad libero repudiandae nobis
+                quo ducimus numquam quidem facere facilis vero ratione ullam,
+                temporibus in sapiente amet fugit porro veritatis labore odio
+                exercitationem? Suscipit ut accusamus aperiam reiciendis?
+                Doloribus quae voluptate aut dolorem similique tempora aliquam,
+                quod autem dignissimos pariatur debitis ipsam quo et dolores,
+                ea, corporis odio accusamus delectus eos a quos. Magnam
+                doloribus eos, nam similique ipsa rerum non obcaecati
+                exercitationem sapiente!
+              </p>
+            </div>
+          </div>
+
+          <div class="post">
+            <h4 class="post-title">
+              Post Two
+            </h4>
+            <div class="post-content">
+              <div class="white-box" data-current-width="100"></div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                odit vitae facere deleniti eveniet omnis, ut molestiae soluta
+                culpa dolores pariatur ratione! Repellendus necessitatibus quae
+                amet doloribus pariatur velit, sunt illum quidem! Saepe, maiores
+                architecto? Illo mollitia doloremque aperiam, quibusdam,
+                expedita non ducimus consequatur libero ex totam nihil autem
+                labore voluptatibus nulla blanditiis, eaque tenetur illum quae a
+                debitis atque doloribus? Repellendus, cupiditate maiores laborum
+                at quis cum nobis temporibus. Dolorem dolore sunt atque sit cum,
+                quia nihil quam, incidunt dicta totam ut. Nemo facere obcaecati
+                sapiente tempora! Doloremque molestias nobis totam labore
+                perspiciatis consequuntur deserunt laboriosam doloribus tenetur
+                facere!
+              </p>
+            </div>
+          </div>
+
+          <div class="post">
+            <h4 class="post-title">
+              Post Three
+            </h4>
+            <div class="post-content">
+              <div class="white-box" data-current-width="100"></div>
+              <p class="post-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                natus voluptates est obcaecati cumque molestias aperiam
+                consequuntur commodi! Reprehenderit, nemo labore praesentium
+                necessitatibus ducimus ex iste. Ducimus excepturi modi, eum
+                tempore pariatur doloremque suscipit nisi at nulla. Laudantium,
+                nihil dolore? Ipsum harum est repellendus qui nihil praesentium
+                quas ullam vel itaque sint unde laborum reiciendis iusto
+                eveniet, earum iure officia a perspiciatis rerum! Soluta,
+                ducimus quas. Tenetur necessitatibus accusantium libero, atque
+                inventore ad vitae! Fuga voluptatibus ipsa quaerat aliquam nihil
+                sit expedita eos qui rem fugit enim, in accusamus placeat!
+                Explicabo nostrum ipsam incidunt, non dolor ducimus. Soluta,
+                accusamus enim?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer id="footer"></footer>
+
+    <script src="draw_nav.js"></script>
+    <script type="text/javascript">
+      const whiteBoxes = document.getElementsByClassName("white-box");
+
+      function reduceWidth(whiteBox, interval) {
+        let currentWidth = whiteBox.dataset.currentWidth;
+        whiteBox.style.width = `${currentWidth - 1}%`;
+        whiteBox.dataset.currentWidth = currentWidth - 1;
+
+        if (whiteBox.dataset.currentWidth <= 0) clearInterval(interval);
+      }
+
+      Array.from(whiteBoxes).forEach(function(element, index, arr) {
+        var interval = setInterval(function() {
+          reduceWidth(element, interval);
+        }, 50);
+      });
+    </script>
+  </body>
+</html>
