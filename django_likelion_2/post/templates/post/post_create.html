@@ -1,0 +1,18 @@
+<h1>글쓰는 페이지</h1>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <div>
+    제목
+    <br />
+    <input type="text" name="title" />
+  </div>
+  <div>
+    내용
+    <br />
+    <textarea name="content" cols="30" rows="10"></textarea>
+  </div>
+  <div>
+    <button>제출</button>
+  </div>
+</form>

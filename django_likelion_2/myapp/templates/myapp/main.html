@@ -1,9 +1,28 @@
 <h1>Hello World</h1>
 
+<a href="{% url 'post:post_create' %}">글쓰기</a>
+<br />
+
 {% if user.is_authenticated %}
+{{ user }} 님 환영합니다.
+<br />
 <a href="{% url 'logout' %}">logout</a>
 <a href="{% url 'change_pw' %}">change password</a>
 {% else %}
 <a href="{% url 'signup' %}">signup</a>
 <a href="{% url 'login' %}">login</a>
 {% endif %}
+
+<hr />
+
+{% for post in post_list %}
+<div>
+  <div>{{ post.title }}</div>
+  <div>{{ post.content }}</div>
+  <div>{{ post.pub_date }}</div>
+  <a href="{% url 'post:post_like_toggle' post.id %}">
+    {% if post in user.author.like_posts.all %} 싫아요 {% else %} 좋아요
+    {% endif %}
+  </a>
+</div>
+{% endfor %}

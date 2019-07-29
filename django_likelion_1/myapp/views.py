@@ -6,7 +6,10 @@ from .form import PostForm, CommentForm
 
 def main(request):
   post_list = Post.objects.all()
-  return render(request, 'main.html', {'post_list': post_list})
+  context = {
+    'post_list': post_list
+  }
+  return render(request, 'main.html', context)
 
 def detail(request, post_id):
   post = Post.objects.get(id=post_id)

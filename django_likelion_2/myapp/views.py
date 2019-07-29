@@ -1,12 +1,17 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth.models import User
 from .models import Author
+from post.models import Post
 from django.contrib import auth
 from django.contrib.auth.hashers import check_password
 
 # Create your views here.
 def main(request):
-  return render(request, "myapp/main.html")
+  post_list = Post.objects.all()
+  context = {
+    'post_list': post_list
+  }
+  return render(request, "myapp/main.html", context)
 
 def signup(request):
   if request.method == "POST":
